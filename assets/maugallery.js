@@ -232,8 +232,9 @@
       $(".active-tag").css("background-color", "white");
       $(".active-tag").removeClass("active active-tag");
       $(this).addClass("active-tag");
-      // --- Modif --- ! mettre le backgground en #beb45a pour l'élement sélectionner ---
-      $(this).css("background-color", "#beb45a");
+      // --- Modif --- ! mettre le backgground en #5E5926 pour l'élement sélectionner ---
+      $(this).css("background-color", "#5E5926");
+      $(this).css("color", "#fff");
 
       var tag = $(this).data("images-toggle");
 
