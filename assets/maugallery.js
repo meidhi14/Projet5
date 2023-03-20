@@ -230,6 +230,7 @@
       }
       // --- Modif --- mettre le background en blanc pour tous les élements qui ont .active-tag ---
       $(".active-tag").css("background-color", "white");
+      $(".active-tag").css("color", "black");
       $(".active-tag").removeClass("active active-tag");
       $(this).addClass("active-tag");
       // --- Modif --- ! mettre le backgground en #5E5926 pour l'élement sélectionner ---
