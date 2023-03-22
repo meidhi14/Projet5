@@ -6,6 +6,7 @@ body {
   font-family: "Inter";
   font-style: normal;
 }
+
 .top-header {
   background-color: white;
   position: sticky;
@@ -20,12 +21,23 @@ body {
 
 .top-header .name {
   font-size: 26px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
 }
 
 .nav ul {
   display: flex;
+  align-items: center;
   list-style-type: none;
   font-size: 14px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -40,6 +52,95 @@ body {
 
 .social-link img {
   width: 20px;
+}
+
+/* --- Carousel --- */
+.carrousel {
+  width: 100%;
+  height: calc(100vw / 2);
+  position: relative;
+}
+
+.image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.image-active {
+  display: block;
+  height: 100%;
+}
+
+.indicateurs {
+  width: 10%;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.indicateur {
+  width: 30px;
+  height: 3px;
+  border: none;
+  background-color: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.indicateur-active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.fleche-gauche,
+.fleche-droite {
+  position: absolute;
+  z-index: 3;
+  background-color: transparent;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.fleche-gauche {
+  left: 0;
+}
+
+.fleche-droite {
+  right: 0;
+  font-weight: 100;
+}
+
+i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.fleche-gauche:hover,
+.fleche-droite:hover {
+  opacity: 1;
 }
 
 #about {
@@ -99,41 +200,12 @@ body {
 .gallery .nav {
   justify-content: center;
 }
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #5e5926;
-  border-radius: 0, 25rem;
-}
-.nav-pills .nav-link {
-  color: #000;
-}
-.item-column {
-  position: relative;
-  margin-bottom: 0 !important;
-  padding: 0;
-}
-.item-column::after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-}
 .gallery-item {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   padding: 0.5em;
-}
-.mg-prev,
-.mg-next {
-  width: 30px;
-  height: 30px;
-  border-radius: 00%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-size: 24px;
 }
 
 .quote {
