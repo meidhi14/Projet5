@@ -241,7 +241,7 @@ i {
 .grid {
   width: 440px;
   height: 440px;
-  background: #333;
+  cursor: pointer;
 }
 
 .image1 {
