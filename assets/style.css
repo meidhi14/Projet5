@@ -190,7 +190,8 @@ i {
 }
 
 #gallery {
-  /*	min-height: 100vh; */
+  width: 90%;
+  margin: 0 auto;
 }
 
 .title {
@@ -227,6 +228,59 @@ i {
   background-color: #5e5926;
   border-radius: 5px;
 }
+
+.grille {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 440px);
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+.grid {
+  width: 440px;
+  height: 440px;
+  background: #333;
+}
+
+.image1 {
+  background: center / cover no-repeat
+    url(/assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp);
+}
+.image2 {
+  background: center / cover no-repeat
+    url(/assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.WebP);
+}
+.image3 {
+  background: center / cover no-repeat
+    url(/assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.WebP);
+}
+.image4 {
+  background: center / cover no-repeat
+    url(/assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.WebP);
+}
+.image5 {
+  background: center / cover no-repeat
+    url(/assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.WebP);
+}
+.image6 {
+  background: center / cover no-repeat
+    url(/assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.WebP);
+}
+.image7 {
+  background: center / cover no-repeat
+    url(/assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.WebP);
+}
+.image8 {
+  background: center / cover no-repeat
+    url(/assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.WebP);
+}
+.image9 {
+  background: center / cover no-repeat
+    url(/assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.WebP);
+}
+
 .quote {
   font-family: "Spectral";
   font-style: italic;
