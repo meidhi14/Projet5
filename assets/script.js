@@ -77,3 +77,22 @@ function changeImageSuivante() {
 }
 
 // --- GALERIE ---
+
+// Gerer l'état des filtres
+// Variables
+const filtres = document.querySelectorAll(".filtres");
+console.log(filtres);
+
+for (let i = 0; i < filtres.length; i++) {
+  filtres[i].addEventListener("click", () => {
+    changeFiltre(filtres[i]);
+  });
+}
+
+// fonctions
+function changeFiltre(filtre) {
+  for (let i = 0; i < filtres.length; i++) {
+    filtres[i].classList.remove("filtre-active");
+  }
+  filtre.classList.add("filtre-active");
+}
