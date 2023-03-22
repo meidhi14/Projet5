@@ -1,7 +1,7 @@
 // --- CARROUSEL ---
 
 // --- Variables ---
-const images = document.querySelectorAll(".image");
+const images = document.querySelectorAll(".images");
 const indicateurs = document.querySelectorAll(".indicateur");
 const flecheGauche = document.querySelector(".fleche-gauche");
 const flecheDroite = document.querySelector(".fleche-droite");
