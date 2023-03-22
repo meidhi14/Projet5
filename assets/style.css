@@ -128,7 +128,8 @@ body {
   right: 0;
 }
 
-i {
+.fleche-gauche i,
+.fleche-droite i {
   font-size: 40px;
   color: #fff;
 }
@@ -279,6 +280,49 @@ i {
 .image9 {
   background: center / cover no-repeat
     url(../assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.WebP);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 16px;
+  z-index: 1002;
+  border-radius: 5px;
+  display: none;
+}
+
+.fleche-gauche-modal,
+.fleche-droite-modal {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.fleche-gauche-modal {
+  left: -20px;
+  top: 50%;
+}
+.fleche-droite-modal {
+  right: -20px;
+  top: 50%;
 }
 
 .quote {
